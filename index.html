@@ -1,0 +1,53 @@
+<!--DOCTYPE HTML-->
+<html>
+<head>
+	<title> Gangnam PSYch </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="./banana.png" rel="shortcut icon" type="image/x-icon"/>
+</head>
+    
+<body>    
+
+<div id="bg"> </div>
+  
+<audio id="audio" controls loop>
+  <source src="gangnamstyle.ogg" type="audio/ogg">
+  <source src="gangnamstyle.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id="discoBallLight"></div>
+<div id="discoBall">
+  <div id="discoBallMiddle"></div>
+</div>
+    <script src="./discoball.js"></script>
+    
+<div style="position: absolute; left: 50%;">
+  <div style="position: relative; left: -50%;">
+    <img src="./imgs" id="psy">
+  </div>
+</div>
+<script src="./loop.js"></script>
+<script type="text/javascript">
+    var looper = ImageLooper({
+          "image_count": 15,
+          "extension": "png",
+          "prefix": "psy",
+          "img": "psy",
+          "reversed": false,
+          "auto_start": false,
+          "onframe": null
+        });
+
+    looper.start()
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
